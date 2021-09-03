@@ -106,9 +106,7 @@ class ElFinder extends BaseElFinder
                 ],
             ];
             $this->session = new \elFinderSession($sessionOpts);
-        }
-        // try session start | restart
-        $this->session->start();
+        }        
 
         $sessionUseCmds = [];
         if (isset($opts['sessionUseCmds']) && is_array($opts['sessionUseCmds'])) {
